@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Blog</h1>
+    <ul>
+        {% for post in posts %}
+            {% if post.id==1%}
+                <h1> {{ post['id'] }} {{ post["title"] }}</h1>
+                <h1>{{ post["subtitle"] }}</h1>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
